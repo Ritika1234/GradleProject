@@ -4,8 +4,7 @@ apply plugin :'java'
 //apply plugin: 'sonarqube-runner' 
 //apply plugin: "sonar"
 
-
-
+mainClassName = 'com.capgemini.test.AccountTest'
 
 apply plugin: 'sonar-runner'
 //repositories
@@ -21,9 +20,9 @@ dependencies { testCompile "org.mockito:mockito-core:1.+" }
 dependencies {
   testCompile 'junit:junit:4.12'
 }
-sonarRunner {
-sonarProperties {
-  property "sonar.projectName", "bankapp"
-  property "sonar.projectKey", "org.sonarqube:java-gradle-simple"
-}
-}
+//sonarRunner {
+//sonarProperties {
+  //property "sonar.projectName", "bankapp"
+  //property "sonar.projectKey", "org.sonarqube:java-gradle-simple"
+//}
+//}
